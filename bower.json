@@ -9,7 +9,8 @@
     "highstock-release": "2.1.6",
     "highcharts-release": "4.1.6",
     "handlebars": "^2.0.0",
-    "jquery": "1.9.1"
+    "jquery": "1.9.1",
+    "framework7": "1.2.0"
   },
   "devDependencies": {},
   "appPath": "app"

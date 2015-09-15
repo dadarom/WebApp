@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Bridge App</title>
+
+    <!-- Path to Framework7 Library CSS, iOS Theme -->
+    <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.ios.min.css">
+    <!-- Path to Framework7 color related styles, iOS Theme -->
+    <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="styles/app7-2.css">
+</head>
+<body>
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+
+<div class="views tabs toolbar-through">
+
+    <!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
+    <div id="view-1" class="view view-main tab active">
+
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="center sliding">Bridge</div>
+                <div class="right"><a href="#" class="link icon-only open-popup"><i id="addSomething" class="icon icon-plus">+</i></a></div>
+            </div>
+        </div>
+
+        <div class="pages navbar-through">
+            <div data-page="index-1" class="page">
+                <div class="page-content"><!-- Scrollable page content-->
+
+                    <div class="list-block inset">
+
+                        <!-- group 1-->
+                        <div class="list-group">
+                            <ul>
+                               <!-- <li class="list-group-title">First group</li>-->
+                                <li>
+                                    <a href="#" class="item-content item-link">
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">Facebook</div>
+                                                <div class="item-after">17:14</div>
+                                            </div>
+                                            <div class="item-subtitle">New messages from John Doe</div>
+                                            <div class="item-text">Lorem ipsum ...</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-content item-link">
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">Facebook</div>
+                                                <div class="item-after">17:14</div>
+                                            </div>
+                                            <div class="item-after"><span class="badge">1</span></div>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">B02 <span class="badge">1min ago</span></div>
+                                            <div class="item-after"><span class="badge">1</span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">B01</div>
+                                            <div class="item-after"><span class="badge">19min ago</span></div>
+                                            <div class="item-after"><span class="badge">2</span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">B01 <span class="badge">19min ago</span></div>
+                                            <div class="item-after"><span class="badge">3</span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div style="padding: 5px;"></div>
+
+                        <!-- group 2-->
+                        <div class="list-group">
+                            <ul>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Item title</div>
+                                            <div class="item-after">Label</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Item with badge</div>
+                                            <div class="item-after"><span class="badge">5</span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Another item</div>
+                                            <div class="item-after">Another label</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="view-2" class="view tab">
+        <!-- We can make with view with navigation, let's add Top Navbar-->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="center sliding">Second View</div>
+            </div>
+        </div>
+
+        <div class="pages navbar-through">
+            <div data-page="index-2" class="page">
+                <div class="page-content">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-3" class="view tab">
+        <div class="pages">
+            <div data-page="index-3" class="page">
+                <div class="page-content">
+                    <div class="content-block-title">Another plain static view</div>
+                    <div class="content-block">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo massa, eu adipiscing mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ultricies dictum neque, non varius tortor fermentum at. Curabitur auctor cursus imperdiet. Nam molestie nisi nec est lacinia volutpat in a purus. Maecenas consectetur condimentum viverra. Donec ultricies nec sem vel condimentum. Phasellus eu tincidunt enim, sit amet convallis orci. Vestibulum quis fringilla dolor.    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-4" class="view tab">
+        <div class="pages navbar-fixed">
+            <div data-page="index-4" class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="center">Settings</div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Name</div>
+                                        <div class="item-input">
+                                            <input type="text" placeholder="Your name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="icon icon-form-email"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">E-mail</div>
+                                        <div class="item-input">
+                                            <input type="email" placeholder="E-mail">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="list-block">
+                        <ul>
+                            <li><a href="about.html" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">About Us</div>
+                                    </div>
+                                </div></a>
+                            </li>
+                            <li><a href="services.html" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">Services</div>
+                                    </div>
+                                </div></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Tabbar-->
+    <div class="toolbar tabbar tabbar-labels">
+        <div class="toolbar-inner">
+            <a href="#view-1" class="tab-link active">
+                <i class="icon tabbar-demo-icon-1"></i><span class="tabbar-label">Information</span>
+            </a>
+            <a href="#view-2" class="tab-link">
+                <i class="icon tabbar-demo-icon-2"></i><span class="tabbar-label">Inbox</span>
+            </a>
+            <a href="#view-3" class="tab-link">
+                <i class="icon tabbar-demo-icon-3"><span class="badge bg-red">4</span></i><span class="tabbar-label">Upload</span>
+            </a>
+            <a href="#view-4" class="tab-link">
+                <i class="icon tabbar-demo-icon-4"></i><span class="tabbar-label">Setting</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="bower_components/framework7/dist/js/framework7.min.js"></script>
+<script type="text/javascript" src="js/app7-2.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Bridge App</title>
+
+    <!-- Path to Framework7 Library CSS, iOS Theme -->
+    <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.ios.min.css">
+    <!-- Path to Framework7 color related styles, iOS Theme -->
+    <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.ios.colors.min.css">
+    <!--<link rel="stylesheet" href="path/to/my-app.css">-->
+</head>
+<body>
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+<div class="statusbar-overlay"></div>
+<!-- Views -->
+<div class="views">
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+            <div class="navbar-inner" data-page="index">
+                <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                <div class="center sliding">Bridge</div>
+            </div>
+
+            <!-- About page navbar -->
+            <div class="navbar-inner cached" data-page="about">
+                <div class="center">About</div>
+            </div>
+
+            <!-- Services page navbar -->
+            <div class="navbar-inner cached" data-page="services">
+                <div class="center">Services</div>
+            </div>
+
+        </div>
+
+        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+
+            <!-- Index page -->
+            <div class="page" data-page="index"><!-- Page, "data-page" contains page name -->
+
+                <div class="page-content"><!-- Scrollable page content -->
+                    <p>Home page</p>
+                    <a href="#about">About page</a>
+                    <a href="#services">Services page</a>
+                </div>
+            </div>
+
+            <!-- About page -->
+            <div class="page cached" data-page="about">
+                <div class="page-content">
+                    <p>About page</p>
+                    <a href="#index" class="back"> Go back to home page </a>
+                </div>
+            </div>
+
+            <!-- Services page -->
+            <div class="page cached" data-page="services">
+                <div class="page-content">
+                    <p>Services page</p>
+                    <a href="#index" class="back"> Go back to home page </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+            <div class="toolbar-inner">
+                <!-- Toolbar links -->
+                <a href="#about" class="link">about</a>
+                <a href="#services" class="link">services</a>
+            </div>
+        </div>
+    </div>
+
+<!--
+    <div class="view another-view">
+        &lt;!&ndash; Navbar&ndash;&gt;
+        &lt;!&ndash; Pages &ndash;&gt;
+        <div class="pages">
+            &lt;!&ndash; About page &ndash;&gt;
+            <div class="page" data-page="about">
+                <div class="page-content">
+                    <p>About page</p>
+                </div>
+            </div>
+
+            &lt;!&ndash; Services page &ndash;&gt;
+            <div class="page cached" data-page="services">
+                <div class="page-content">
+                    <p>Services page</p>
+                </div>
+            </div>
+        </div>
+
+        &lt;!&ndash; Toolbar&ndash;&gt;
+    </div>
+-->
+</div>
+
+<!--
+<div class="popup">
+    <div class="view popup-view"> ... </div>
+</div>
+-->
+
+<script type="text/javascript" src="bower_components/framework7/dist/js/framework7.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
